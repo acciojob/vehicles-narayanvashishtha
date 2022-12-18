@@ -12,12 +12,12 @@ public class Car extends Vehicle {
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
         super(name);
-        this.wheels = wheels;
-        this.type = type;
-        this.doors = doors;
-        this.gears = gears;
-        this.isManual = isManual;
-        this.seats = seats;
+        getWheels(wheels);
+        getType(type);
+        getDoors(doors);
+        getGears(gears);
+        isManual(isManual);
+        getSeats(seats);
         setCurrentGear(1);
     }
 
@@ -36,32 +36,32 @@ public class Car extends Vehicle {
     }
 
 
-
-    public int getWheels() {
+    //Getters
+    public int getWheels(int wheels) {
         return wheels;
     }
 
-    public String getType() {
+    public String getType(String type) {
         return type;
     }
 
-    public int getDoors() {
+    public int getDoors(int doors) {
         return doors;
     }
 
-    public int getGears() {
+    public int getGears(int gears) {
         return gears;
     }
 
-    public boolean isManual() {
+    public boolean isManual(boolean isManual) {
         return isManual;
     }
 
-    public int getCurrentGear() {
+    public int getCurrentGear(int currentGear) {
         return currentGear;
     }
 
-    public int getSeats() {
+    public int getSeats(int seats) {
         return seats;
     }
 }
